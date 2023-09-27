@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="img/group.png" alt="guardian-logo">
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="index.html" onclick="scrollToHome()">Home</a></li>
+                <li><a href="index.html" onclick="scrollToTes()">Testimonials</a></li>
+                <li><a href="index.html" onclick="scrollToAbout()">About Me</a></li>
+                <li><a href="" onclick="scrollToView()">News</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <button>Login</button>
+            <button class="active">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <article class="news-content">
+                <div class="time-header">
+                <h1 class="title">
+                    Essential Guide to Cybersecurity Compliance
+                </h1>
+                </div>
+                <div class="img">
+                <p class="date">Sep 26, 2023</p>
+                <img src="img/intro-news.jpg" alt="img-intro" srcset="">
+                <br>
+                <a href="https://thehackernews.com/2023/09/essential-guide-to-cybersecurity.html" class="source">The Hacker News</a>
+                </div>
+                <p class="description">SOC 2, ISO, HIPAA, Cyber Essentials – all the security frameworks and certifications today are an acronym soup that can make even a compliance expert's head spin. If you're embarking on your compliance journey, read on to discover the differences between standards, which is best for your business, and how vulnerability management can aid compliance.</p>
+                <h2 class="title">
+                    What is cybersecurity compliance?
+                </h2>
+                <p class="description">Cybersecurity compliance means you have met a set of agreed rules regarding the way you protect sensitive information and customer data. These rules can be set by law, regulatory authorities, trade associations or industry groups. <br><br>
+
+                    For example, the GDPR is set by the EU with a wide range of cybersecurity requirements that every organization within its scope must comply with, while ISO 27001 is a voluntary (but internationally recognized) set of best practices for information security management. Customers increasingly expect the assurance that compliance brings, because breaches and data disclosure will impact their operations, revenue and reputation too. </p>
+            </article>
+        </div>
+    
+    <aside>
+        <article id="trending-news" class="trending">
+        <div class="trending-header">
+            <h3 class="trending-title">
+                Trending News
+            </h3>
+            <p class="line">-----------</p>
+        </div>
+        <div class="card">
+            <div class="news-container">
+            <img src="img/apple.jpg" alt="apple" srcset="">
+            <a href="https://thehackernews.com/2023/09/apple-rushes-to-patch-3-new-zero-day.html">Apple Rushes to Patch 3 New Zero-Day Flaws: iOS, macOS, Safari, and More Vulnerable</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="news-container">
+                <img src="img/Spyware.jpg" alt="spyware" srcset="">
+                <a href="https://thehackernews.com/2023/09/latest-apple-zero-days-used-to-hack.html">New Apple Zero-Days Exploited to Target Egyptian ex-MP with Predator Spyware</a>
+                </div>
+        </div>
+
+        <div class="card">
+            <div class="news-container">
+                <img src="img/hacking.jpg" alt="hacking" srcset="">
+                <a href="https://thehackernews.com/2023/09/deadglyph-new-advanced-backdoor-with.html">Deadglyph: New Advanced Backdoor with Distinctive Malware Tactics</a>
+                </div>
+        </div>
+
+        <div class="card">
+            <div class="news-container">
+                <img src="img/cyber.jpg" alt="" srcset="">
+                <a href="https://thehackernews.com/2023/09/mysterious-sandman-threat-actor-targets.html">
+                    Mysterious 'Sandman' Threat Actor Targets Telecom Providers Across Three Continents
+                </a>
+                </div>
+        </div>
+
+        <div class="card">
+            <div class="news-container">
+                <img src="img/flaw.jpg" alt="" srcset="">
+                <a href="https://thehackernews.com/2023/09/high-severity-flaws-uncovered-in.html">High-Severity Flaws Uncovered in Atlassian Products and ISC BIND Server</a>
+                </div>
+        </div>
+
+        </article>
+    </aside>
+</main>
+<footer>
+    <p class="copy">Copyright &copy Guardian 2023 Muhammad Ariq Akbar</p>
+</footer>
+    <script src="js/javascript.js">
+    </script>
+</body>
+</html>

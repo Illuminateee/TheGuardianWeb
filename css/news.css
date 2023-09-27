@@ -1,0 +1,247 @@
+*,*::before,*::after{
+    box-sizing: content-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+/* Navbar Begin */
+
+header.navbar-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 999;
+    
+}
+
+header.navbar-container .logo img{
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    transition: all .2s ease-in-out;
+
+}
+
+header.navbar-container .nav-list li:hover a{
+    color: #3164F4;
+}
+
+header.navbar-container .nav-lsit li:active a{
+    background-color: #3164F4;
+}
+
+header.navbar-container .login button{
+    border-radius: 6px;
+    padding: .5rem 1.5rem;
+    border-width: 0;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+header.nav-container .login button.active{
+    color: #3164F4;
+}
+
+header.navbar-container .login button:hover {
+    color: #3164F4;
+    
+}
+
+header.navbar-container .login button.active:enabled{
+    color: #3164F4;
+}
+
+/* end of navbar */
+
+main{
+    max-width: 1000px;
+    width: 100%;
+    margin-inline: auto;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+main .content-container{
+    padding-block: 2rem;
+    flex: 3;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main .news-content{
+    min-width: 250px;
+    width: 98%;
+}
+
+main .title{
+    line-height: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+
+main .date{
+    color: gray;
+    font-size: .8rem;
+}
+
+main .news-content a.source{
+    line-height: 0;
+    text-decoration: none;
+    color: grey;
+    font-size: .6rem;
+}
+
+main .news-content a.source:hover{
+    color: #3164F4;
+}
+/* end of main */
+aside{
+    flex: 1;
+}
+
+aside .trending{
+    padding-block: 3rem;
+}
+
+aside .trending-header{
+    line-height: 0;
+}
+
+aside .card{
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: .5rem;
+    margin-bottom: 15px;
+}
+
+aside .news-container{
+    flex: 1;
+    display: flex;
+    gap: 5px;
+}
+
+aside img{
+    border-radius: 6px;
+}
+
+aside a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+aside a:hover{
+    color: #3164F4;
+}
+
+footer{
+    padding: 1rem;
+    text-align: center;
+    background-color: #EDEDED;
+}
+
+@media screen and (max-width: 1200px){
+    header.navbar-container{
+        flex-direction: column;
+    }
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+    /* end of header */
+
+    main{
+        flex-direction: column;
+    }
+
+    main .news-content{
+        gap: 5rem;
+    }
+    main .news-content p.description{
+        padding: 2rem;
+    }
+    main .news-content p.date{
+        text-align: center;
+    }
+   
+
+    main .news-content h1.title{
+        padding: 1rem;
+    }
+    main .news-content h2.title{
+        padding: 1rem;
+    }
+
+    main .card{
+        width: max-content;
+        width: 85%;
+    }
+
+    main .news-content .img img{
+      max-width: min-content;
+    }
+
+    main .news-content .img{
+        text-align: center;
+    }
+
+    main .title{
+        font-size: 1rem;
+    }
+
+    main .time-header .date{
+        font-size: .5rem;
+    }
+
+    main .news-content p{
+        text-align: justify;
+    }
+
+/* end of news */
+    main .trending{
+        padding: 3rem;
+    }
+
+
+}
+
+@media screen and (max-width: 750px){
+    main .news-content .img img{
+        max-width: 400px;
+      }
+
+    main .news-content p{
+        text-align: justify;
+    }
+}

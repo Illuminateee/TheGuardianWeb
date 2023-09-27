@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="img/group.png" alt="guardian-logo">
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#home" onclick="scrollToHome()">Home</a></li>
+                <li><a href="#testimonial" onclick="scrollToTes()">Testimonials</a></li>
+                <li><a href="#about" onclick="scrollToAbout()">About Me</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <button>Login</button>
+            <button class="active">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <article id="home-content" class="content-header">
+                <div class="content-description">
+                    <p class="trial">- FREE 30 DAYS TRIAL</p>
+                    <h1 class="title">
+                    The best way <br>to protect <br>your app.
+                    </h1>
+                    <p>No System is safe. But, we can gurantee you the safety world for your apps. Here The Guardian introduction the Ares server, that FBI can't even reach it. What are you waiting for?</p>
+                    <button><b>Try for free</b></button>
+                    <button><b>See how it works</b></button>
+                </div>
+                
+                <div class="content-img-header">
+                    <img src="img/header-img.png" alt="Apps">
+                </div>
+            </article>
+
+            <!-- 2nd Article -->
+            <article id="content-introducting" class="card">
+                <div class="content-description">
+                    <h1 class="title"> 
+                        Introducing <br>Guardian the Ares Server
+                    </h1>
+                    <p>Join our community and experience <br>the benefits today!</p>
+                    <button><b>Try for free</b></button>
+                </div>
+                <div class="content-img">
+                    <img src="img/server.png" alt="server">
+                </div>
+            </article>
+
+            <!-- 3rd Article -->
+            <article id="content-introducting" class="card2">
+                <div class="content-img">
+                    <img src="img/people.png" alt="people">
+                </div>
+                <div class="content-description">
+                    <p class="trial">SMARTSAVE</p>
+                    <h1 class="title"> 
+                        All your work is safe with us
+                    </h1>
+                    <p>We take your data security seriously, which is why we use advanced encryption protocols to protect your files in the cloud. Your data is safe and secure with us.</p>
+                    <button><b>Try Now</b></button>
+                </div>
+                
+            </article>
+
+
+            <!-- 4th Article -->
+            <article id="content-introducting" class="card2">
+                <div class="content-description">
+                    <p class="trial">COSTSAVER</p>
+                    <h1 class="title"> 
+                        Cost saving in a smart way
+                    </h1>
+                    <p>Powerful tool that helps you reduce costs and save money on your business operations. With advanced analytics and optimization algorithms, Costsaver analyzes your existing workflows and identifies areas for improvement.</p>
+                    <button><b>Try for free</b></button>
+                </div>
+                <div class="content-img">
+                    <img src="img/coin.png" alt="server">
+                </div>
+            </article>
+
+            <!-- 5th Articles -->
+            <br><br><br><br>
+            <div id="testimonial-content" class="text-description">
+                <h1 class="title">
+                    Testimonials
+                </h1>
+                <p>People love what we do and we want to let your know</p>
+            </div>
+            <article  class="content-testimoni">
+
+                <div class="card-testimoni">
+                    <p>"Since implementing Ares our business has seen significant Safe."</p>
+                
+                    <div class="stars"><img src="img/stars.png" alt="stars" srcset=""></div>
+                    <p>John Lennon</p>
+                    <p class="status">Musician</p>
+                </div>
+
+                <div class="card-testimoni">
+                    <p>"Since implementing Ares our business has seen significant Safe."</p>
+                
+                    <div class="stars"><img src="img/stars.png" alt="stars" srcset=""></div>
+                    <p>Lebron James</p>
+                    <p class="status">Former NBA</p>
+                </div>
+
+                <div class="card-testimoni">
+                    <p>"Since implementing Ares our business has seen significant Safe."</p>
+                
+                    <div class="stars">
+                        <img src="img/stars.png" alt="stars" srcset="">
+                    </div>
+                    <p>Brock Lesnar</p>
+                    <p class="status">Former MMA</p>
+                </div>
+            </article>
+            <!-- About me -->
+            <br><br><br><br>
+            <br><br>
+            <div id="about-content" class="text-description">
+                <h1 class="title">
+                    About me
+                </h1>
+            </div>
+            <div class="profile-img">
+                <img src="img/profile.jpeg" alt="ariq">
+            </div>
+            <article id="about-me" class="about-me">
+            <div class="card-about">
+                <div class="text-description">
+                    <h2 class="name">Muhammad Ariq Akbar</h2>
+                    <p class="description">Saya merupakan mahasiswa baru di Universitas Terbuka Bandung jurusan Sistem Informasi <br>yang memiliki passion di bidang IT terkhusus di bidang Web Developer. <br>Saya berharap mendapatkan bintang 5 di penilaian tugas akhir ini hehe.</p>
+                </div>
+            </div>
+            </article>
+
+        </div>
+    </main>
+        <footer>
+            <p class="copy">Copyright &copy Guardian 2023 Muhammad Ariq Akbar</p>
+        </footer>
+    
+    <script src="js/javascript.js">
+    </script>
+</body>
+</html>
